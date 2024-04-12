@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <script src="../static/js/index.js"></script>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data" id="totaldata">
+        <div>
+            <label for="name">账号</label>
+            <input type="number" name="name">
+        </div>
+        <div>
+            <label for="passwd">密码</label>
+            <input type="password" name="passwd">
+        </div>
+        <div>
+            <label for="number">数字</label>
+            <input type="number" name="number">
+        </div>
+
+        <div>
+            <input type="submit" value="提交" onclick="click()">
+        </div>
+        
+    </form>
+
+    {% if error %}
+      <h1>{{ error }}!</h1>
+    {% else %}
+      <h1>{{ error }}!</h1>
+    {% endif %}
+
+</body>
+</html>
+
